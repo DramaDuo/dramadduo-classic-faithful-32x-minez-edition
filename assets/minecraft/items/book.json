@@ -1,0 +1,130 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_name",
+    "fallback": {
+      "type": "model",
+      "model": "item/book"
+    },
+    "cases": [
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Gamma",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_gamma"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Mu",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_mu"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Omega",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_omega"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Omicron",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_omicron"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Phi",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_phi"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Astrum Sigma",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_sigma"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Seal of Entropy",
+          "color": "red"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/seal_of_entropy"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Seal of Gravity",
+          "color": "light_purple"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/seal_of_gravity"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Seal of Space",
+          "color": "yellow"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/seal_of_space"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Seal of Time",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/books/seal_of_time"
+        }
+      }
+    ]
+  }
+}

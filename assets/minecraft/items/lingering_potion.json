@@ -1,0 +1,229 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "potion_contents",
+    "cases": [
+      {
+        "when": {"potion": "water"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.247, 0.463, 0.894]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "awkward"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.22, 0.36, 0.78]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "mundane"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.31, 0.23, 0.19]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "healing"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.980, 0.0, 0.980]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "strong_healing"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.97, 0.14, 0.14]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "swiftness"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.22, 0.77, 0.73]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "fire_resistance"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.89, 0.61, 0.25]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "harming"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.663, 0.396, 0.416]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "strength"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.57, 0.15, 0.11]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "regeneration"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.80, 0.31, 0.78]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "poison"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.31, 0.58, 0.19]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "night_vision"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.12, 0.12, 0.69]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "invisibility"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.50, 0.51, 0.57]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "weakness"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.28, 0.30, 0.28]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "slowness"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.36, 0.42, 0.62]
+            }
+          ]
+        }
+      },
+      {
+        "when": {"potion": "turtle_master"},
+        "model": {
+          "type": "model",
+          "model": "item/lingering_potion",
+          "tints": [
+            {
+              "type": "constant",
+              "value": [0.16, 0.34, 0.06]
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/lingering_potion",
+      "tints": [
+        {
+          "type": "constant",
+          "value": [0.0, 0.0, 0.0]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "pack_format": 75,
+        "description": "DramaDuo Original Faithful 32x32 MineZ upgrade",
+        "supported_formats": {
+            "min_inclusive": 34,
+            "max_inclusive": 75
+        },
+        "min_format": 34,
+        "max_format": [75, 0]
+    }
+}

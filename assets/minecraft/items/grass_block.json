@@ -1,0 +1,82 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_name",
+    "fallback": {
+      "type": "model",
+      "model": "block/grass_block",
+      "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": [0.486, 0.741, 0.420]
+            }
+          ]
+    },
+    "cases": [
+      {
+        "when": "Spawn 1",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/kaocho"
+        }
+      },
+      {
+        "when": "Spawn 8",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/grimdale"
+        }
+      },
+      {
+        "when": "Spawn 12",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/pravus"
+        }
+      },
+      {
+        "when": "Spawn 14",
+        "model": {
+          "type": "model",
+          "model": "block/ice"
+        }
+      },
+      {
+        "when": "Spawn 19",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/portsmouth"
+        }
+      },
+      {
+        "when": "Spawn 23",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/bellfarm"
+        }
+      },
+      {
+        "when": "Spawn 29",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/romero"
+        }
+      },
+      {
+        "when": "Spawn 33",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/carmi"
+        }
+      },
+      {
+        "when": "Spawn 40",
+        "model": {
+          "type": "model",
+          "model": "item/grass_blocks/geuten"
+        }
+      }
+    ]
+  }
+}

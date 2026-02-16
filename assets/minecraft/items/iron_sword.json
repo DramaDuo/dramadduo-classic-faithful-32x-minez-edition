@@ -1,0 +1,106 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_name",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/iron_sword"
+    },
+    "cases": [
+      {
+        "when": {
+          "italic": false,
+          "text": "Agni's Rage",
+          "bold": true,
+          "color": "red"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/agnis_rage"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Dentril's Fear",
+          "bold": true,
+          "color": "dark_gray"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/dentrils_fear"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Lone Sword",
+          "bold": true
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/lone_sword"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Masamune",
+          "bold": true
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/masamune"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Pluvia's Storm",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/pluvias_storm"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Simoon's Song",
+          "bold": true,
+          "color": "light_purple"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/simoons_song"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Tenseiga",
+          "bold": true
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/tenseiga"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Therum's Strength",
+          "bold": true,
+          "color": "yellow"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/swords/therums_strength"
+        }
+      }
+    ]
+  }
+}

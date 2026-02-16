@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "item/bows/therums_power/bow_pulling_2"
+    }
+}

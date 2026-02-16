@@ -1,0 +1,84 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_name",
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_chestplate"
+    },
+    "cases": [
+      {
+        "when": {
+          "italic": false,
+          "text": "Agni's Wrath",
+          "bold": true,
+          "color": "red"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/agnis_wrath"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Dentril's Terror",
+          "bold": true,
+          "color": "dark_gray"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/dentrils_terror"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Pluvia's Tempest",
+          "bold": true,
+          "color": "aqua"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/pluvias_tempest"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Rubber Shield",
+          "bold": true
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/rubber_shield"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Simoon's Sonata",
+          "bold": true,
+          "color": "light_purple"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/simoons_sonata"
+        }
+      },
+      {
+        "when": {
+          "italic": false,
+          "text": "Therum's Force",
+          "bold": true,
+          "color": "yellow"
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/therums_force"
+        }
+      }
+    ]
+  }
+}
