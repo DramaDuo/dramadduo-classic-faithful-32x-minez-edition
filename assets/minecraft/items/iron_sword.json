@@ -2,7 +2,7 @@
   "model": {
     "type": "select",
     "property": "component",
-    "component": "custom_name",
+    "component": "item_name",
     "fallback": {
       "type": "model",
       "model": "minecraft:item/iron_sword"
@@ -10,7 +10,6 @@
     "cases": [
       {
         "when": {
-          "italic": false,
           "text": "Agni's Rage",
           "bold": true,
           "color": "red"
@@ -22,7 +21,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Dentril's Fear",
           "bold": true,
           "color": "dark_gray"
@@ -34,7 +32,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Lone Sword",
           "bold": true
         },
@@ -45,7 +42,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Masamune",
           "bold": true
         },
@@ -56,7 +52,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Pluvia's Storm",
           "bold": true,
           "color": "aqua"
@@ -68,7 +63,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Simoon's Song",
           "bold": true,
           "color": "light_purple"
@@ -80,7 +74,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Tenseiga",
           "bold": true
         },
@@ -91,7 +84,6 @@
       },
       {
         "when": {
-          "italic": false,
           "text": "Therum's Strength",
           "bold": true,
           "color": "yellow"
