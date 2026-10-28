@@ -1,0 +1,71 @@
+{
+  "model": {
+    "type": "select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minez:helm_splitter",
+        "model": {
+          "type": "model",
+          "model": "item/swords/helm_splitter"
+        }
+      },
+      {
+        "when": "minez:overkill",
+        "model": {
+          "type": "model",
+          "model": "item/swords/overkill"
+        }
+      },
+      {
+        "when": "minez:peace",
+        "model": {
+          "type": "model",
+          "model": "item/swords/peace"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "item_name",
+      "cases": [
+        {
+          "when": {
+            "text": "Helm Splitter",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/helm_splitter"
+          }
+        },
+        {
+          "when": {
+            "text": "Overkill",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/overkill"
+          }
+        },
+        {
+          "when": {
+            "text": "Peace",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/peace"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/diamond_sword"
+      }
+    }
+  }
+}

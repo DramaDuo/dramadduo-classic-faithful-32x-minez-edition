@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:lure": 1
+        },
+        "model": {
+          "type": "condition",
+          "property": "fishing_rod/cast",
+          "on_false": {
+            "type": "model",
+            "model": "item/tools/lure1_fishing_rod"
+          },
+          "on_true": {
+            "type": "model",
+            "model": "minecraft:item/fishing_rod_cast"
+          }
+        }
+      },
+      {
+        "when": {
+          "minecraft:lure": 2
+        },
+        "model": {
+          "type": "condition",
+          "property": "fishing_rod/cast",
+          "on_false": {
+            "type": "model",
+            "model": "item/tools/lure2_fishing_rod"
+          },
+          "on_true": {
+            "type": "model",
+            "model": "minecraft:item/fishing_rod_cast"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "condition",
+      "property": "fishing_rod/cast",
+      "on_false": {
+        "type": "model",
+        "model": "minecraft:item/fishing_rod"
+      },
+      "on_true": {
+        "type": "model",
+        "model": "minecraft:item/fishing_rod_cast"
+      }
+    }
+  }
+}

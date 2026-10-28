@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:protection": 1
+        },
+        "model": {
+          "type": "model",
+          "model": "item/helmets/studded_leather_helmet"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/leather_helmet",
+      "tints": [
+        {
+          "type": "minecraft:dye",
+          "default": -6265536
+        }
+      ]
+    }
+  }
+}

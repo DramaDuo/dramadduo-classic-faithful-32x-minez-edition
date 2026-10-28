@@ -1,171 +1,228 @@
 {
   "model": {
     "type": "select",
-    "property": "component",
-    "component": "custom_name",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
     "cases": [
       {
-        "when": {
-          "italic": false,
-          "text": "Agni's Ire",
-          "bold": true,
-          "color": "red"
-        },
+        "when": "minez:agnis_ire",
         "model": {
           "type": "model",
           "model": "item/potions/agnis_ire"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Cleansing Elixir",
-          "color": "green"
-        },
+        "when": "minez:cleansing_elixir",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 65280
-            }
-          ]
+          "model": "item/potions/cleansing_elixir"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Dentril's Dread",
-          "bold": true,
-          "color": "dark_gray"
-        },
+        "when": "minez:dentrils_dread",
         "model": {
           "type": "model",
           "model": "item/potions/dentrils_dread"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Pluvia's Hail",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:pluvias_hail",
         "model": {
           "type": "model",
           "model": "item/potions/pluvias_hail"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Simoon's Tune",
-          "bold": true,
-          "color": "light_purple"
-        },
+        "when": "minez:simoons_tune",
         "model": {
           "type": "model",
           "model": "item/potions/simoons_tune"
         }
       },
       {
-        "when": {
-          "text": "Therum's Might",
-          "bold": true,
-          "italic": false,
-          "color": "yellow"
-        },
+        "when": "minez:therums_might",
         "model": {
           "type": "model",
           "model": "item/potions/therums_might"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Manzana Cider",
-          "color": "red"
-        },
+        "when": "minez:manzana_cider",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 8388608
-            }
-          ]
+          "model": "item/potions/manzana_cider"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Witch's Brew",
-          "color": "dark_purple"
-        },
+        "when": "minez:witchs_brew",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 8388736
-            }
-          ]
+          "model": "item/potions/witchs_brew"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Frozen Mar'Ghoul'ita",
-          "color": "aqua"
-        },
+        "when": "minez:frozen_marghoulita",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 5499645
-            }
-          ]
+          "model": "item/potions/frozen_marghoulita"
         }
       }
     ],
     "fallback": {
       "type": "select",
       "property": "component",
-      "component": "potion_contents",
+      "component": "custom_name",
       "cases": [
         {
-          "when": {"custom_color": 16711680},
+          "when": {
+            "italic": false,
+            "text": "Agni's Ire",
+            "bold": true,
+            "color": "red"
+          },
           "model": {
             "type": "model",
             "model": "item/potions/agnis_ire"
           }
         },
         {
-          "when": {"potion": "healing"},
+          "when": {
+            "italic": false,
+            "text": "Cleansing Elixir",
+            "color": "green"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.980, 0.0, 0.980]
-              }
-            ]
+            "model": "item/potions/cleansing_elixir"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Dentril's Dread",
+            "bold": true,
+            "color": "dark_gray"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/dentrils_dread"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Pluvia's Hail",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/pluvias_hail"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Simoon's Tune",
+            "bold": true,
+            "color": "light_purple"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/simoons_tune"
+          }
+        },
+        {
+          "when": {
+            "text": "Therum's Might",
+            "bold": true,
+            "italic": false,
+            "color": "yellow"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/therums_might"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Manzana Cider",
+            "color": "red"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/manzana_cider"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Witch's Brew",
+            "color": "dark_purple"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/witchs_brew"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Frozen Mar'Ghoul'ita",
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/potions/frozen_marghoulita"
           }
         }
       ],
       "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/potion",
-      "tints": [
-        { "type": "minecraft:potion", "default": -13083194 }
-      ]
+        "type": "select",
+        "property": "component",
+        "component": "potion_contents",
+        "cases": [
+          {
+            "when": {
+              "custom_color": 16711680
+            },
+            "model": {
+              "type": "model",
+              "model": "item/potions/agnis_ire"
+            }
+          },
+          {
+            "when": {
+              "potion": "healing"
+            },
+            "model": {
+              "type": "model",
+              "model": "item/potion",
+              "tints": [
+                {
+                  "type": "constant",
+                  "value": [
+                    0.98,
+                    0.0,
+                    0.98
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/potion",
+          "tints": [
+            {
+              "type": "minecraft:potion",
+              "default": -13083194
+            }
+          ]
+        }
+      }
     }
   }
-}
 }

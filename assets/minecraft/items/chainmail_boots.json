@@ -1,0 +1,54 @@
+{
+  "model": {
+    "type": "select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minez:ninja_sandals",
+        "model": {
+          "type": "model",
+          "model": "item/boots/ninja_sandals"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "custom_name",
+      "cases": [
+        {
+          "when": {
+            "italic": false,
+            "text": "Ninja Sandals",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/boots/ninja_sandals"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "select",
+        "property": "component",
+        "component": "enchantments",
+        "cases": [
+          {
+            "when": {
+              "minecraft:protection": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/boots/pristine_chain_boots"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "minecraft:item/chainmail_boots"
+        }
+      }
+    }
+  }
+}

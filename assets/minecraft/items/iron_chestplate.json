@@ -1,84 +1,167 @@
 {
   "model": {
     "type": "select",
-    "property": "component",
-    "component": "custom_name",
-    "fallback": {
-      "type": "model",
-      "model": "item/iron_chestplate"
-    },
+    "property": "minecraft:custom_model_data",
+    "index": 0,
     "cases": [
       {
-        "when": {
-          "italic": false,
-          "text": "Agni's Wrath",
-          "bold": true,
-          "color": "red"
-        },
+        "when": "minez:agnis_wrath",
         "model": {
           "type": "model",
           "model": "item/chestplates/agnis_wrath"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Dentril's Terror",
-          "bold": true,
-          "color": "dark_gray"
-        },
+        "when": "minez:dentrils_terror",
         "model": {
           "type": "model",
           "model": "item/chestplates/dentrils_terror"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Pluvia's Tempest",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:pluvias_tempest",
         "model": {
           "type": "model",
           "model": "item/chestplates/pluvias_tempest"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Rubber Shield",
-          "bold": true
-        },
+        "when": "minez:rubber_shield",
         "model": {
           "type": "model",
           "model": "item/chestplates/rubber_shield"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Simoon's Sonata",
-          "bold": true,
-          "color": "light_purple"
-        },
+        "when": "minez:simoons_sonata",
         "model": {
           "type": "model",
           "model": "item/chestplates/simoons_sonata"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Therum's Force",
-          "bold": true,
-          "color": "yellow"
-        },
+        "when": "minez:therums_force",
         "model": {
           "type": "model",
           "model": "item/chestplates/therums_force"
         }
+      },
+      {
+        "when": "minez:rimeguard",
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/rimeguard"
+        }
       }
-    ]
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "custom_name",
+      "fallback": {
+        "type": "select",
+        "property": "component",
+        "component": "enchantments",
+        "cases": [
+          {
+            "when": {
+              "minecraft:fire_protection": 4
+            },
+            "model": {
+              "type": "model",
+              "model": "item/chestplates/fire_protection_chestplate"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "minecraft:item/iron_chestplate"
+        }
+      },
+      "cases": [
+        {
+          "when": {
+            "italic": false,
+            "text": "Agni's Wrath",
+            "bold": true,
+            "color": "red"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/agnis_wrath"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Dentril's Terror",
+            "bold": true,
+            "color": "dark_gray"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/dentrils_terror"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Pluvia's Tempest",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/pluvias_tempest"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Rubber Shield",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/rubber_shield"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Simoon's Sonata",
+            "bold": true,
+            "color": "light_purple"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/simoons_sonata"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Therum's Force",
+            "bold": true,
+            "color": "yellow"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/therums_force"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "RimeGuard",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/chestplates/rimeguard"
+          }
+        }
+      ]
+    }
   }
 }

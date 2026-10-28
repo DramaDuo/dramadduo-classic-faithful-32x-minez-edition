@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:protection": 1
+        },
+        "model": {
+          "type": "model",
+          "model": "item/leggings/studded_leather_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/leather_leggings",
+      "tints": [
+        {
+          "type": "minecraft:dye",
+          "default": -6265536
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "model": {
+    "type": "select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minez:flail",
+        "model": {
+          "type": "model",
+          "model": "item/swords/flail"
+        }
+      },
+      {
+        "when": "minez:ipses_folly",
+        "model": {
+          "type": "model",
+          "model": "item/swords/ipses_folly"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "item_name",
+      "cases": [
+        {
+          "when": {
+            "text": "Flail",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/flail"
+          }
+        },
+        {
+          "when": {
+            "text": "Ipse's Folly",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/ipses_folly"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/golden_sword"
+      }
+    }
+  }
+}

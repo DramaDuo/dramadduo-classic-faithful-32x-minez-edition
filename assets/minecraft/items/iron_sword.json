@@ -1,98 +1,382 @@
 {
   "model": {
     "type": "select",
-    "property": "component",
-    "component": "item_name",
-    "fallback": {
-      "type": "model",
-      "model": "minecraft:item/iron_sword"
-    },
+    "property": "minecraft:custom_model_data",
+    "index": 0,
     "cases": [
       {
-        "when": {
-          "text": "Agni's Rage",
-          "bold": true,
-          "color": "red"
-        },
+        "when": "minez:agnis_rage",
         "model": {
           "type": "model",
           "model": "item/swords/agnis_rage"
         }
       },
       {
-        "when": {
-          "text": "Dentril's Fear",
-          "bold": true,
-          "color": "dark_gray"
-        },
+        "when": "minez:dentrils_fear",
         "model": {
           "type": "model",
           "model": "item/swords/dentrils_fear"
         }
       },
       {
-        "when": {
-          "text": "Lone Sword",
-          "bold": true
-        },
+        "when": "minez:lone_sword",
         "model": {
           "type": "model",
           "model": "item/swords/lone_sword"
         }
       },
       {
-        "when": {
-          "text": "Masamune",
-          "bold": true
-        },
+        "when": "minez:masamune",
         "model": {
           "type": "model",
           "model": "item/swords/masamune"
         }
       },
       {
-        "when": {
-          "text": "Pluvia's Storm",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:pluvias_storm",
         "model": {
           "type": "model",
           "model": "item/swords/pluvias_storm"
         }
       },
       {
-        "when": {
-          "text": "Simoon's Song",
-          "bold": true,
-          "color": "light_purple"
-        },
+        "when": "minez:simoons_song",
         "model": {
           "type": "model",
           "model": "item/swords/simoons_song"
         }
       },
       {
-        "when": {
-          "text": "Tenseiga",
-          "bold": true
-        },
+        "when": "minez:tenseiga",
         "model": {
           "type": "model",
           "model": "item/swords/tenseiga"
         }
       },
       {
-        "when": {
-          "text": "Therum's Strength",
-          "bold": true,
-          "color": "yellow"
-        },
+        "when": "minez:therums_strength",
         "model": {
           "type": "model",
           "model": "item/swords/therums_strength"
         }
+      },
+      {
+        "when": "minez:corsairs_edge",
+        "model": {
+          "type": "model",
+          "model": "item/swords/corsairs_edge"
+        }
+      },
+      {
+        "when": "minez:forsakens_blade",
+        "model": {
+          "type": "model",
+          "model": "item/swords/forsakens_blade"
+        }
+      },
+      {
+        "when": "minez:muramasa",
+        "model": {
+          "type": "model",
+          "model": "item/swords/muramasa"
+        }
+      },
+      {
+        "when": "minez:nights_shadow",
+        "model": {
+          "type": "model",
+          "model": "item/swords/nights_shadow"
+        }
+      },
+      {
+        "when": "minez:phantom_blade",
+        "model": {
+          "type": "model",
+          "model": "item/swords/phantom_blade"
+        }
+      },
+      {
+        "when": "minez:vampyr",
+        "model": {
+          "type": "model",
+          "model": "item/swords/vampyr"
+        }
+      },
+      {
+        "when": "minez:rusted_iron_sword",
+        "model": {
+          "type": "model",
+          "model": "item/swords/rusted_iron_sword"
+        }
       }
-    ]
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "item_name",
+      "fallback": {
+        "type": "select",
+        "property": "component",
+        "component": "enchantments",
+        "cases": [
+          {
+            "when": {
+              "minecraft:smite": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite1_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 2
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite2_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 3
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite3_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 4
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite4_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 5
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite5_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 1,
+              "minecraft:knockback": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite1_knockback1_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 2,
+              "minecraft:knockback": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite2_knockback1_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 3,
+              "minecraft:knockback": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite3_knockback1_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 4,
+              "minecraft:knockback": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite4_knockback1_iron"
+            }
+          },
+          {
+            "when": {
+              "minecraft:smite": 5,
+              "minecraft:knockback": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/swords/smite5_knockback1_iron"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "minecraft:item/iron_sword"
+        }
+      },
+      "cases": [
+        {
+          "when": {
+            "text": "Agni's Rage",
+            "bold": true,
+            "color": "red"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/agnis_rage"
+          }
+        },
+        {
+          "when": {
+            "text": "Dentril's Fear",
+            "bold": true,
+            "color": "dark_gray"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/dentrils_fear"
+          }
+        },
+        {
+          "when": {
+            "text": "Lone Sword",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/lone_sword"
+          }
+        },
+        {
+          "when": {
+            "text": "Masamune",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/masamune"
+          }
+        },
+        {
+          "when": {
+            "text": "Pluvia's Storm",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/pluvias_storm"
+          }
+        },
+        {
+          "when": {
+            "text": "Simoon's Song",
+            "bold": true,
+            "color": "light_purple"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/simoons_song"
+          }
+        },
+        {
+          "when": {
+            "text": "Tenseiga",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/tenseiga"
+          }
+        },
+        {
+          "when": {
+            "text": "Therum's Strength",
+            "bold": true,
+            "color": "yellow"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/therums_strength"
+          }
+        },
+        {
+          "when": {
+            "text": "Corsair's Edge",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/corsairs_edge"
+          }
+        },
+        {
+          "when": {
+            "text": "Forsaken's Blade",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/forsakens_blade"
+          }
+        },
+        {
+          "when": {
+            "text": "Muramasa",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/muramasa"
+          }
+        },
+        {
+          "when": {
+            "text": "Night's Shadow",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/nights_shadow"
+          }
+        },
+        {
+          "when": {
+            "text": "Phantom Blade",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/phantom_blade"
+          }
+        },
+        {
+          "when": {
+            "text": "Vampyr",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/vampyr"
+          }
+        },
+        {
+          "when": {
+            "text": "Rusted Iron Sword",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/rusted_iron_sword"
+          }
+        }
+      ]
+    }
   }
 }

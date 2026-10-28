@@ -1,0 +1,54 @@
+{
+  "model": {
+    "type": "select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minez:kikuichimonji",
+        "model": {
+          "type": "model",
+          "model": "item/swords/kikuichimonji"
+        }
+      },
+      {
+        "when": "minez:robbers_blade",
+        "model": {
+          "type": "model",
+          "model": "item/swords/robbers_blade"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "item_name",
+      "cases": [
+        {
+          "when": {
+            "text": "Kikuichimonji",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/kikuichimonji"
+          }
+        },
+        {
+          "when": {
+            "text": "Robber's Blade",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/swords/robbers_blade"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/wooden_sword"
+      }
+    }
+  }
+}
