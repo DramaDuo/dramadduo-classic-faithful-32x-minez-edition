@@ -1,758 +1,227 @@
 {
   "model": {
     "type": "select",
-    "property": "component",
-    "component": "custom_name",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
     "cases": [
       {
-        "when": {
-          "italic": false,
-          "text": "Agni's Ire",
-          "bold": true,
-          "color": "red"
-        },
+        "when": "minez:agnis_ire",
         "model": {
           "type": "model",
           "model": "item/potions/agnis_ire"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Cleansing Elixir",
-          "color": "green"
-        },
+        "when": "minez:cleansing_elixir",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 65280
-            }
-          ]
+          "model": "item/potions/cleansing_elixir"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Dentril's Dread",
-          "bold": true,
-          "color": "dark_gray"
-        },
+        "when": "minez:dentrils_dread",
         "model": {
           "type": "model",
           "model": "item/potions/dentrils_dread"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Pluvia's Hail",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:pluvias_hail",
         "model": {
           "type": "model",
           "model": "item/potions/pluvias_hail"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Simoon's Tune",
-          "bold": true,
-          "color": "light_purple"
-        },
+        "when": "minez:simoons_tune",
         "model": {
           "type": "model",
           "model": "item/potions/simoons_tune"
         }
       },
       {
-        "when": {
-          "text": "Therum's Might",
-          "bold": true,
-          "italic": false,
-          "color": "yellow"
-        },
+        "when": "minez:therums_might",
         "model": {
           "type": "model",
           "model": "item/potions/therums_might"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Manzana Cider",
-          "color": "red"
-        },
+        "when": "minez:manzana_cider",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 8388608
-            }
-          ]
+          "model": "item/potions/manzana_cider"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Witch's Brew",
-          "color": "dark_purple"
-        },
+        "when": "minez:witchs_brew",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 8388736
-            }
-          ]
+          "model": "item/potions/witchs_brew"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Frozen Mar'Ghoul'ita",
-          "color": "aqua"
-        },
+        "when": "minez:frozen_marghoulita",
         "model": {
           "type": "model",
-          "model": "item/potion",
-          "tints": [
-            {
-              "type": "constant",
-              "value": 5499645
-            }
-          ]
+          "model": "item/potions/frozen_marghoulita"
         }
       }
     ],
     "fallback": {
       "type": "select",
       "property": "component",
-      "component": "potion_contents",
+      "component": "custom_name",
       "cases": [
         {
-          "when": {"custom_color": 16711680},
+          "when": {
+            "italic": false,
+            "text": "Agni's Ire",
+            "bold": true,
+            "color": "red"
+          },
           "model": {
             "type": "model",
             "model": "item/potions/agnis_ire"
           }
         },
         {
-          "when": {"potion": "awkward"},
+          "when": {
+            "italic": false,
+            "text": "Cleansing Elixir",
+            "color": "green"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.22, 0.36, 0.78]
-              }
-            ]
+            "model": "item/potions/cleansing_elixir"
           }
         },
         {
-          "when": {"potion": "fire_resistance"},
+          "when": {
+            "italic": false,
+            "text": "Dentril's Dread",
+            "bold": true,
+            "color": "dark_gray"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.89, 0.60, 0.225]
-              }
-            ]
+            "model": "item/potions/dentrils_dread"
           }
         },
         {
-          "when": {"potion": "harming"},
+          "when": {
+            "italic": false,
+            "text": "Pluvia's Hail",
+            "bold": true,
+            "color": "aqua"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.663, 0.396, 0.416]
-              }
-            ]
+            "model": "item/potions/pluvias_hail"
           }
         },
         {
-          "when": {"potion": "healing"},
+          "when": {
+            "italic": false,
+            "text": "Simoon's Tune",
+            "bold": true,
+            "color": "light_purple"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.980, 0.0, 0.980]
-              }
-            ]
+            "model": "item/potions/simoons_tune"
           }
         },
         {
-          "when": {"potion": "infested"},
+          "when": {
+            "text": "Therum's Might",
+            "bold": true,
+            "italic": false,
+            "color": "yellow"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.56, 0.57, 0.45]
-              }
-            ]
+            "model": "item/potions/therums_might"
           }
         },
         {
-          "when": {"potion": "invisibility"},
+          "when": {
+            "italic": false,
+            "text": "Manzana Cider",
+            "color": "red"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.50, 0.51, 0.57]
-              }
-            ]
+            "model": "item/potions/manzana_cider"
           }
         },
         {
-          "when": {"potion": "leaping"},
+          "when": {
+            "italic": false,
+            "text": "Witch's Brew",
+            "color": "dark_purple"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.13, 1.0, 0.31]
-              }
-            ]
+            "model": "item/potions/witchs_brew"
           }
         },
         {
-          "when": {"potion": "long_fire_resistance"},
+          "when": {
+            "italic": false,
+            "text": "Frozen Mar'Ghoul'ita",
+            "color": "aqua"
+          },
           "model": {
             "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.89, 0.61, 0.25]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_invisibility"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.50, 0.51, 0.57]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_leaping"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.13, 1.0, 0.31]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_night_vision"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.12, 0.12, 0.69]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_poison"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.31, 0.58, 0.19]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_regeneration"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.80, 0.31, 0.78]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_slow_falling"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.97, 0.97, 0.88]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_slowness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.36, 0.42, 0.62]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_strength"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.57, 0.15, 0.11]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_swiftness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.22, 0.77, 0.73]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_turtle_master"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.16, 0.34, 0.06]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_water_breathing"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.18, 0.32, 0.60]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "long_weakness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.28, 0.30, 0.28]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "luck"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.20, 0.60, 0.0]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "mundane"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.31, 0.23, 0.19]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "night_vision"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.12, 0.12, 0.69]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "oozing"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.57, 0.81, 0.35]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "poison"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.31, 0.58, 0.19]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "regeneration"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.80, 0.31, 0.78]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "slow_falling"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.97, 0.97, 0.88]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "slowness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.36, 0.42, 0.62]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strength"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.57, 0.15, 0.11]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_harming"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.663, 0.396, 0.416]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_healing"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.97, 0.14, 0.14]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_leaping"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.13, 1.0, 0.31]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_poison"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.31, 0.58, 0.19]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_regeneration"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.80, 0.31, 0.78]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_slowness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.36, 0.42, 0.62]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_strength"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.57, 0.15, 0.11]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_swiftness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.22, 0.77, 0.73]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "strong_turtle_master"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.16, 0.34, 0.06]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "swiftness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.22, 0.77, 0.73]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "thick"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.22, 0.36, 0.78]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "turtle_master"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.16, 0.34, 0.06]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "water"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.247, 0.463, 0.894]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "water_breathing"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.18, 0.32, 0.60]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "weakness"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.28, 0.30, 0.28]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "weaving"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.48, 0.48, 0.60]
-              }
-            ]
-          }
-        },
-        {
-          "when": {"potion": "wind_charged"},
-          "model": {
-            "type": "model",
-            "model": "item/potion",
-            "tints": [
-              {
-                "type": "constant",
-                "value": [0.88, 0.88, 1.0]
-              }
-            ]
+            "model": "item/potions/frozen_marghoulita"
           }
         }
       ],
       "fallback": {
-        "type": "model",
-        "model": "item/potion",
-        "tints": [
+        "type": "select",
+        "property": "component",
+        "component": "potion_contents",
+        "cases": [
           {
-            "type": "constant",
-            "value": [0.0, 0.0, 0.0]
+            "when": {
+              "custom_color": 16711680
+            },
+            "model": {
+              "type": "model",
+              "model": "item/potions/agnis_ire"
+            }
+          },
+          {
+            "when": {
+              "potion": "healing"
+            },
+            "model": {
+              "type": "model",
+              "model": "item/potion",
+              "tints": [
+                {
+                  "type": "constant",
+                  "value": [
+                    0.98,
+                    0.0,
+                    0.98
+                  ]
+                }
+              ]
+            }
           }
-        ]
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/potion",
+          "tints": [
+            {
+              "type": "minecraft:potion",
+              "default": -13083194
+            }
+          ]
+        }
       }
     }
   }

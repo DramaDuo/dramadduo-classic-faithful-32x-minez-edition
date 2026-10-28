@@ -1,0 +1,22 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:protection": 1
+        },
+        "model": {
+          "type": "model",
+          "model": "item/chestplates/pristine_chain_chestplate"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/chainmail_chestplate"
+    }
+  }
+}

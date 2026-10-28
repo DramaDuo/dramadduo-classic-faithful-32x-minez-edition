@@ -1,130 +1,473 @@
 {
   "model": {
     "type": "select",
-    "property": "component",
-    "component": "custom_name",
-    "fallback": {
-      "type": "model",
-      "model": "item/book"
-    },
+    "property": "minecraft:custom_model_data",
+    "index": 0,
     "cases": [
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Gamma",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_gamma",
         "model": {
           "type": "model",
           "model": "item/books/astrum_gamma"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Mu",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_mu",
         "model": {
           "type": "model",
           "model": "item/books/astrum_mu"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Omega",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_omega",
         "model": {
           "type": "model",
           "model": "item/books/astrum_omega"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Omicron",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_omicron",
         "model": {
           "type": "model",
           "model": "item/books/astrum_omicron"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Phi",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_phi",
         "model": {
           "type": "model",
           "model": "item/books/astrum_phi"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Astrum Sigma",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:astrum_sigma",
         "model": {
           "type": "model",
           "model": "item/books/astrum_sigma"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Seal of Entropy",
-          "color": "red"
-        },
+        "when": "minez:seal_of_entropy",
         "model": {
           "type": "model",
           "model": "item/books/seal_of_entropy"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Seal of Gravity",
-          "color": "light_purple"
-        },
+        "when": "minez:seal_of_gravity",
         "model": {
           "type": "model",
           "model": "item/books/seal_of_gravity"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Seal of Space",
-          "color": "yellow"
-        },
+        "when": "minez:seal_of_space",
         "model": {
           "type": "model",
           "model": "item/books/seal_of_space"
         }
       },
       {
-        "when": {
-          "italic": false,
-          "text": "Seal of Time",
-          "bold": true,
-          "color": "aqua"
-        },
+        "when": "minez:seal_of_time",
         "model": {
           "type": "model",
           "model": "item/books/seal_of_time"
         }
+      },
+      {
+        "when": "minez:astrum_alpha",
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_alpha"
+        }
+      },
+      {
+        "when": "minez:astrum_wau",
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_wau"
+        }
+      },
+      {
+        "when": "minez:astrum_beta",
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_beta"
+        }
+      },
+      {
+        "when": "minez:astrum_theta",
+        "model": {
+          "type": "model",
+          "model": "item/books/astrum_theta"
+        }
+      },
+      {
+        "when": "minez:astra_alpha",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_alpha"
+        }
+      },
+      {
+        "when": "minez:astra_wau",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_wau"
+        }
+      },
+      {
+        "when": "minez:astra_beta",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_beta"
+        }
+      },
+      {
+        "when": "minez:astra_theta",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_theta"
+        }
+      },
+      {
+        "when": "minez:astra_mu",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_mu"
+        }
+      },
+      {
+        "when": "minez:astra_omicron",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_omicron"
+        }
+      },
+      {
+        "when": "minez:astra_sigma",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_sigma"
+        }
+      },
+      {
+        "when": "minez:astra_phi",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_phi"
+        }
+      },
+      {
+        "when": "minez:astra_gamma",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_gamma"
+        }
+      },
+      {
+        "when": "minez:astra_omega",
+        "model": {
+          "type": "model",
+          "model": "item/books/astra_omega"
+        }
       }
-    ]
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "custom_name",
+      "fallback": {
+        "type": "model",
+        "model": "item/book"
+      },
+      "cases": [
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Gamma",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_gamma"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Mu",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_mu"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Omega",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_omega"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Omicron",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_omicron"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Phi",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_phi"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Sigma",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_sigma"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Seal of Entropy",
+            "color": "red"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/seal_of_entropy"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Seal of Gravity",
+            "color": "light_purple"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/seal_of_gravity"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Seal of Space",
+            "color": "yellow"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/seal_of_space"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Seal of Time",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/seal_of_time"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Alpha",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_alpha"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Wau",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_wau"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Beta",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_beta"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astrum Theta",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astrum_theta"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Alpha",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_alpha"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Wau",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_wau"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Beta",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_beta"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Theta",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_theta"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Mu",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_mu"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Omicron",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_omicron"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Sigma",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_sigma"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Phi",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_phi"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Gamma",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_gamma"
+          }
+        },
+        {
+          "when": {
+            "italic": false,
+            "text": "Astra Omega",
+            "bold": true,
+            "color": "aqua"
+          },
+          "model": {
+            "type": "model",
+            "model": "item/books/astra_omega"
+          }
+        }
+      ]
+    }
   }
 }

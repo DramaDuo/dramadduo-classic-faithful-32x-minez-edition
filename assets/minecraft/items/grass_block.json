@@ -1,82 +1,32 @@
 {
   "model": {
-    "type": "select",
-    "property": "component",
-    "component": "custom_name",
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:count",
+    "normalize": false,
     "fallback": {
       "type": "model",
       "model": "block/grass_block",
-      "tints": [
-            {
-              "type": "minecraft:constant",
-              "value": [0.486, 0.741, 0.420]
-            }
-          ]
+      "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ]
     },
-    "cases": [
-      {
-        "when": "Spawn 1",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/kaocho"
-        }
-      },
-      {
-        "when": "Spawn 8",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/grimdale"
-        }
-      },
-      {
-        "when": "Spawn 12",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/pravus"
-        }
-      },
-      {
-        "when": "Spawn 14",
-        "model": {
-          "type": "model",
-          "model": "block/ice"
-        }
-      },
-      {
-        "when": "Spawn 19",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/portsmouth"
-        }
-      },
-      {
-        "when": "Spawn 23",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/bellfarm"
-        }
-      },
-      {
-        "when": "Spawn 29",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/romero"
-        }
-      },
-      {
-        "when": "Spawn 33",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/carmi"
-        }
-      },
-      {
-        "when": "Spawn 40",
-        "model": {
-          "type": "model",
-          "model": "item/grass_blocks/geuten"
-        }
-      }
+    "entries": [
+      { "threshold": 1,  "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/kaocho" } },
+      { "threshold": 2,  "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 8,  "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/grimdale" } },
+      { "threshold": 9,  "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 12, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/pravus" } },
+      { "threshold": 13, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 14, "model": { "type": "minecraft:model", "model": "minecraft:block/ice" } },
+      { "threshold": 15, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 19, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/portsmouth" } },
+      { "threshold": 20, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 23, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/bellfarm" } },
+      { "threshold": 24, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 29, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/romero" } },
+      { "threshold": 30, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 33, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/carmi" } },
+      { "threshold": 34, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } },
+      { "threshold": 40, "model": { "type": "minecraft:model", "model": "minecraft:item/grass_blocks/geuten" } },
+      { "threshold": 41, "model": { "type": "minecraft:model", "model": "minecraft:block/grass_block", "tints": [ { "type": "minecraft:grass", "temperature": 0.5, "downfall": 1.0 } ] } }
     ]
   }
 }

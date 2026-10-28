@@ -1,0 +1,54 @@
+{
+  "model": {
+    "type": "select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minez:chimney_sweep",
+        "model": {
+          "type": "model",
+          "model": "item/leggings/chimney_sweep"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "custom_name",
+      "cases": [
+        {
+          "when": {
+            "italic": false,
+            "text": "Chimney Sweep",
+            "bold": true
+          },
+          "model": {
+            "type": "model",
+            "model": "item/leggings/chimney_sweep"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "select",
+        "property": "component",
+        "component": "enchantments",
+        "cases": [
+          {
+            "when": {
+              "minecraft:depth_strider": 1
+            },
+            "model": {
+              "type": "model",
+              "model": "item/leggings/depth_strider_leggings"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "minecraft:item/iron_leggings"
+        }
+      }
+    }
+  }
+}

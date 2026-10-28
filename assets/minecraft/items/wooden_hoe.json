@@ -1,0 +1,31 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:fortune": 1
+        },
+        "model": {
+          "type": "model",
+          "model": "item/tools/fortune1_wooden_hoe"
+        }
+      },
+      {
+        "when": {
+          "minecraft:fortune": 2
+        },
+        "model": {
+          "type": "model",
+          "model": "item/tools/fortune2_wooden_hoe"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/wooden_hoe"
+    }
+  }
+}
